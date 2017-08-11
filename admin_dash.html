@@ -12,7 +12,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script></script>
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <script src="admin_dash.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript" src="fusion.js"></script>
   <script type="text/javascript" src="theme.js"></script>
@@ -31,7 +30,7 @@
       </div>
     </nav>
   </div>
-  <h1 id="title_qit" >QIt Analytics.</h1>
+  <h1 id="title_qit" >QIt Analytics</h1>
   <br>
 
 <div class="container">
@@ -117,6 +116,23 @@
     </div>
 </div>
 </div>
-<button type="button" class="fixed_button">Live Chat</button>
+<button type="button" class="fixed_button" id="chatButton" onclick="toggle()">Live Chat <i class="material-icons">arrow_drop_down</i></div>
+<div class="fixed_button_append" id="hide">
+  <h4>Welcome to chat</h4>
+  <hr>
+  <br>
+  <div class="chip middle">
+  <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
+    Jane Doe : D456
+  </div>
+  <br>
+  <div class="chip middle">
+  <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
+    Mary Doe : T678
+  </div>
+</div>
+
+<script src="admin_dash.js"></script>
+
   </body>
 </html>
