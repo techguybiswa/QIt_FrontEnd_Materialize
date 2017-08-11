@@ -37,10 +37,11 @@ h1 {
   padding-bottom: 50px;
 }
 .chip {
-  background-color: #4f6384;
+  background-color: #173059;
+
 }
 .roundC {
-  border-radius: 200px;
+  border-radius: 100px;
   width: 100%;
   text-align: center;
 
@@ -80,6 +81,22 @@ h1 {
   cursor: pointer;
   display: none;
 }
-.chip:hover {
+.orderDone:hover {
+  color: #6cf26a;
+  cursor: hand;
+}
+.orderCancelled:hover {
   color: red;
+  cursor: hand;
+
+}
+.orderWaiting:hover {
+  color: yellow;
+  cursor: hand;
+}
+smaller {
+  font-size: 20px;
+}
+.middle-left{
+  text-align: left
 }
