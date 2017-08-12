@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+
     <title>QIt Admin Dashboard</title>
     <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
@@ -29,8 +30,11 @@
       </div>
     </nav>
   </div>
+  <hr class="style8">
   <h1 id="title_qit" >QIt Dashboard</h1>
-<div class="container">
+  <hr class="style15">
+  <br><br>
+<div class="container-fluid">
   <div class="row" id="animate_row">
     <div class="col s4">
       <div class="row">
@@ -85,6 +89,27 @@
     </div>
   </div>
   <!-- Add graph here -->
+  <hr class="style11">
+  <h4 class="middle-colored" ><b>Orders Queued</b></h4>
+
+  <!-- <div class="row">
+    <div class="col s4">
+
+    </div>
+    <div class="col s7">
+      <h4 class="middle-colored" ><b>Orders Queued</b></h4>
+    </div>
+    <div class="col s1" style="padding-right: 100px">
+      <!-- <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:120px;height:40px;"src="http://www.clocklink.com/html5embed.php?clock=004&timezone=ACST&color=blue&size=120&Title=&Message=&Target=&From=2017,1,1,0,0,0&Color=blue"></iframe> -->
+
+    <!-- </div>
+  </div> -->
+  <!-- <h4 class="middle-colored" ><b>Orders Queued</b>
+</h4> -->
+
+  <div class="clock" style="align:right">
+    </div>
+  <hr class="style11">
 
 <div class="row">
 <div class="col s2">
@@ -108,7 +133,6 @@
 </div>
 </div>
 </div>
-
 <div class="row">
 <div class="col s12">
 <div class="card-panel  middle" style="background-color: #e0ed38">
@@ -122,12 +146,10 @@
 
 </div>
 
-      <div class="col s8 ">
-        <br><br><br>
-        <div class="card-panel transL roundC">
-          <div class="middle"><b>Queued Codes</b></div>
-          <br>
-          <div class="chip middle middle-left">
+      <div class="col s10 ">
+
+        <div class="card-panel card-queueList pre-scrollable" style="background-color: white">
+          <!-- <div class="chip middle middle-left">
           <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
             Mark Shank : D455
             &nbsp;
@@ -179,9 +201,9 @@
 
 
 
+ -->
 
-
-          <br>
+          <!-- <br>
           <div class="chip middle">
           <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
             Mary Doe : T678
@@ -190,11 +212,59 @@
             <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
             <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
 
-          </div>
+          </div> -->
+
+          <table  class="orderList bordered centered">
+    <thead>
+      <tr>
+          <th>Name</th>
+          <th>Email Id</th>
+          <th>Queue Code</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+      <tr>
+        <td>Alvin</td>
+        <td>bis.banerjee.bb@gmail.com</td>
+        <td>D5467</td>
+      </tr>
+    </tbody>
+  </table>
 
         </div>
       </div>
-      <div class="col s2">
+      <!-- <div class="col s2">
         &nbsp;
         <br><br><br><br><br><br><br><br>
         <div class="row">
@@ -203,13 +273,12 @@
           <span class="white-text">Time Now
           </span>
           <hr>
-          <iframe src="http://free.timeanddate.com/clock/i5ug8u62/n1720/szw80/szh80/hoc009/hbw0/hfc9ff/cf100/hnc0f9/hwc000/fan2/fas16/fac555/fdi60/mqcf0f/mqs4/mql2/mqw4/mqd78/mhcf90/mhs4/mhl3/mhw4/mhd78/mmv0/hhc990/hhs2/hmc990/hms2/hscf09" frameborder="0" width="80" height="80"></iframe>
 
         </div>
       </div>
     </div>
 
-      </div>
+      </div> -->
     </div>
 </div>
 </div>
