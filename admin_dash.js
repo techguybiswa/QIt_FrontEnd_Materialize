@@ -9,12 +9,15 @@ $(document).ready(function(){
 });
 
 function toggle() {
+    //console.log("CLicked");
+
     var x = document.getElementById('hide');
     var y = document.getElementById('chatButton');
-    var z = document.getElementById('hideMe');
+    //var z = document.getElementById('hideMe');
+    //console.log(x.style.display);
     if (x.style.display == 'none') {
         x.style.display = 'block';
-        y.style.backgroundColor =  '#87b5ff';
+        y.style.backgroundColor =  '#575c82';
         // z.style.color:
     } else {
         x.style.display = 'none';

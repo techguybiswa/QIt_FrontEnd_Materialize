@@ -16,6 +16,11 @@ body {
 html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
+.h4-white{
+  font-family: 'Raleway', sans-serif;
+   color: #ffffff;
+   text-align: center;
+ }
 h4{
   font-family: 'Pacifico', cursive;
   color: #021026;
@@ -27,7 +32,7 @@ h4{
   height: 122px;
 }
 .card-panel2 {
-  background-color: #002642;
+  background-color: #575c82;
   padding: 10px;
   padding-top:30px;
   padding-bottom: 30px;
@@ -47,20 +52,26 @@ h4{
   background-color:#acb4ef;
 }
 .middle {
-  font-family: font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-size: 25px;
+}
+.middle2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #002642;
+  font-size: 15px;
 }
 .middle-colored {
   text-align: center;
-  color: #002642;
+  color: #021026;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
 }
 
 .chip {
-  background-color: #173059;
+  background-color: #ffffff;
 }
 .roundC {
   border-radius: 100px;
@@ -76,7 +87,7 @@ h4{
     position: fixed;
     bottom: 0px;
     right: 0px;
-    background-color: #87b5ff;
+    background-color: #575c82;
     border: none;
     color: white;
     text-align: center;
@@ -93,7 +104,7 @@ h4{
   position: fixed;
   bottom: 0px;
   right: 0px;
-  background-color: #87b5ff;
+  background-color: #575c82;
   border: none;
   color: white;
   text-align: center;
@@ -121,7 +132,7 @@ smaller {
   font-size: 20px;
 }
 .middle-left{
-  text-align: left
+  text-align: left;
 }
 .card-queueList {
   /*box-shadow: 10px 10px 5px 3px #8ca9d8;
