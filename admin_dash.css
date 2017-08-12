@@ -1,11 +1,15 @@
 .nav-wrapper{
   background-color: #002642;
 }
+body {
+  background-color: #ededed;
+}
 .titlePush {
-  padding: -300px
+
+  height: 80px;
 }
 .title_box {
-  background-color: #ededed;
+  background-color: white;
   padding: 2px;
   border-bottom: 1px solid #002642;
 }
@@ -14,14 +18,20 @@ html {
  }
 h4{
   font-family: 'Pacifico', cursive;
-
   color: #021026;
   text-align: center;
 }
 .card-panel {
   background-color: #002642;
-  min-height: 10px;
-
+  margin-top: 5px;
+  height: 122px;
+}
+.card-panel2 {
+  background-color: #002642;
+  padding: 10px;
+  padding-top:30px;
+  padding-bottom: 30px;
+  border-radius: 5px 5px 5px 5px;
 }
 .moveUp{
   position: relative;
@@ -33,6 +43,9 @@ h4{
   cursor:move;
   /*box-shadow: 10px 10px grey;*/
 }
+.enhanceUI {
+  background-color:#acb4ef;
+}
 .middle {
   font-family: font-family: 'Quicksand', sans-serif;
   text-align: center;
@@ -41,16 +54,11 @@ h4{
 }
 .middle-colored {
   text-align: center;
-  color: #31419b;
+  color: #002642;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
+}
 
-}
-.transL{
-  opacity: 0.60;
-  min-height: 40px;
-  padding-bottom: 50px;
-}
 .chip {
   background-color: #173059;
 }
