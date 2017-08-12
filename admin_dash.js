@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $('#title_qit').addClass('animated fadeInDown');
   $('#animate_row').addClass('animated fadeInUp');
- $(".button-collapse").sideNav();
+  $('#title2').addClass('animated slideInLeft');
+
 });
 
 function toggle() {
