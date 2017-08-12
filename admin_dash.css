@@ -1,17 +1,25 @@
 .nav-wrapper{
-  background-color: #243b5e;
+  background-color: #002642;
+}
+.titlePush {
+  padding: -300px
+}
+.title_box {
+  background-color: #ededed;
+  padding: 2px;
+  border-bottom: 1px solid #002642;
 }
 html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
  }
-h2 {
+h4{
   font-family: 'Pacifico', cursive;
 
-  color: #475468;
+  color: #021026;
   text-align: center;
 }
 .card-panel {
-  background-color: #6c7c96;
+  background-color: #002642;
   min-height: 10px;
 
 }
@@ -21,7 +29,7 @@ h2 {
   transition: top ease 0.5s;
 }
 .moveUp:hover {
-  top: -20px;
+  top: -7px;
   cursor:move;
   /*box-shadow: 10px 10px grey;*/
 }
@@ -119,8 +127,6 @@ hr.style11 {
 	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
     border: 0;
 }
-
-
 hr.style15 {
 	border-top: 4px double #8c8b8b;
 	text-align: center;
