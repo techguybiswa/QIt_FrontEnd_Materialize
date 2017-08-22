@@ -2,7 +2,7 @@ $(document).ready(function(){
   $('#title_qit').addClass('animated fadeInDown');
   $('#animate_row').addClass('animated fadeInUp');
   $('#title2').addClass('animated slideInLeft');
-  $('#chatButton').addClass('animated rotateInDownLeft');
+  $('#chatButton').addClass('animated rotateInDownRight');
 
 
 
