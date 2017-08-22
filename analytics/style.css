@@ -1,18 +1,18 @@
 .login button:hover{
-  cursor: pointer;
+	cursor: pointer;
 }
 
 
 .box {
-  height: 70px;
-  width: 100px;
-  background: #4285f4;
-  color: white;
-  margin-left: -5px;
+	height: 70px;
+	width: 100px;
+	background: #4285f4;
+	color: white;
+	margin-left: -5px;
 }
 
 .box:hover{
-     -moz-box-shadow:    0 3px 50px 10px #B6B6B6;
+	   -moz-box-shadow:    0 3px 50px 10px #B6B6B6;
         -webkit-box-shadow: 0 3px 50px 10px #b6b6b6;
         box-shadow:         0 3px 50px 10px #b6b6b6;
         cursor: pointer;
