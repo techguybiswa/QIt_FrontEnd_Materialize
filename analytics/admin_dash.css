@@ -17,3 +17,16 @@
         box-shadow:         0 3px 50px 10px #b6b6b6;
         cursor: pointer;
 }
+
+.orderDone:hover {
+  color: #6cf26a;
+  cursor: pointer;
+}
+.orderCancelled:hover {
+  color: red;
+  cursor: pointer;
+}
+.orderWaiting:hover {
+  color: yellow;
+  cursor: pointer;
+}
