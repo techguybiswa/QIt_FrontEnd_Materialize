@@ -1,367 +1,168 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>QIt Admin Dashboard</title>
-    <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-  <link rel="stylesheet" href="admin_dash.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
-  <!-- Compiled and minified JavaScript -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script></script>
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="fusion.js"></script>
-  <script type="text/javascript" src="theme.js"></script>
-  <script type="text/javascript" src="admin_dash.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-    <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="navbar-heading" style="font-family: 'Indie Flower', cursive;"> &nbsp;Q-It</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#"><i class="material-icons left">people_outline</i>Sign up</a></li>
-          <li><a href="#"><i class="material-icons left">subdirectory_arrow_right</i>Log Out</a></li>
-        </ul>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="admin_dash.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+  <!-- Navbar Started -->
+  <div class="fluid-container">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Qit</a>
+      <div class="login">
+        <button class="btn btn-outline-success" type="button">Login</button>
+        <button class="btn btn-outline-primary" type="button">Sign UP</button>
       </div>
     </nav>
   </div>
-  <div class="title_box" >
-    <h4 id="title_qit" >Dashboard</h4>
-  </div>
-  <!-- <hr class="style8">
-  <hr class="style8"> -->
+    <!-- Navbar End -->
+    <!-- Title Start -->
+    <section class="container" id="title">
+      <h1 class="text-center">Dashboard</h1>
+    </section>
+    <!-- Title End -->
 
-<div class="container-fluid">
-  <div class="row" id="animate_row" style="padding-bottom:-10px;">
-    <div class="col s4">
-      <div class="row">
-      <div class="col s12">
-        <div class="card-panel moveUp">
-          <div class="row">
-            <div class="col s12 middle">
-              Waiting Passenger Count
-            </div>
-            <hr>
-            <div class="col s12 middle">
-              2000
-            </div>
-          </div>
+    <!-- Box Start -->
+    <section class="container">
+      <div class="row text-center">
+        <div class="box col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <h5>Waiting Passenger Count</h5>
+          <h6>15</h6>
+        </div>
+        <div class="box col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <h5>Total customer count</h5>
+          <h6>19</h6>
+        </div>
+        <div class="box col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <h5>Bouncing off customers</h5>
+          <h6>5</h6>
         </div>
       </div>
-    </div>
-    </div>
-    <div class="col s4">
+    </section>
+    <!-- Box End -->
+
+    <!-- Title Start -->
+    <section class="container" id="title">
+      <h3 class="text-center">Orders Queued</h3>
+    </section>
+    <!-- Title End -->
+
+    <!-- Main Content Start -->
+    <section class="container">
       <div class="row">
-            <div class="col s12">
-              <div class="card-panel moveUp">
-                <div class="row">
-                  <div class="col s12 middle">
-                    Total customer count
-                  </div>
-                  <hr>
-                  <div class="col s12 middle">
-                    3200
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div class="col s4">
-      <div class="row">
-            <div class="col s12">
-              <div class="card-panel moveUp">
-                <div class="row">
-                  <div class="col s12 middle">
-                    Bouncing off customers
-                  </div>
-                  <hr>
-                  <div class="col s12 middle">
-                    4000
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    </div>
-    <br><br><br><br><br><br>
-    <div class="titlePush" style="border: 1px solid #002642; background-color: white">
-      <h4 class="middle-colored" id="title2" ><b>Orders Queued</b></h4>
-    </div>
+        <div class="col-md-3">
+          
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12">
+          <table  class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                  <th>Queue No.</th>
+                  <th>Name</th>
+                  <th>Email Id</th>
+                  <th>Queue Code</th>
+                  <th>Operations</th>
+              </tr>
+            </thead>
 
-  </div>
-
-<div class="row">
-<div class="col s2">
-  <div class="row">
-  <div class="col s12">
-  <div class="card-panel2  middle enhanceUI" style="background-color: #575c82; min-height: 10px;">
-    <i class="fa fa-check orderDone middle" aria-hidden="true" ></i>
-  <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Done</span>
-
-  <br>
-  <br>
-  <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-  <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Cancelled</span>
-  <br>
-  <br>
-  <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-  <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Waiting</span>
-
-  </div>
-  </div>
-  </div>
-
-<!-- <div class="row">
-<div class="col s12">
-<div class="card-panel  middle" style="background-color: #541824">
-  <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-<hr>
-<span class="white-text" style="font-size: 20px;  ">Order Cancel</span>
-</div>
-</div>
-</div> -->
-<!-- <div class="row">
-<div class="col s12">
-<div class="card-panel  middle" style="background-color: #e0ed38">
-  <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-
-<hr>
-<span class="white-text" style="font-size: 20px;  ">Order Waiting</span>
-</div>
-</div>
-</div> -->
-
-</div>
-
-      <div class="col s10 ">
-        <div class="card-panel card-queueList pre-scrollable" style="background-color: white">
-          <!-- <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Mark Shank : D455
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Susan Hill : D356
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Richy Mann : D576
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Ohyt Tay : D456
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Holli Hella : D456
-
-
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Brack Obama : D456
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-
-
-
- -->
-
-          <!-- <br>
-          <div class="chip middle">
-          <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
-            Mary Doe : T678
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-
-          </div> -->
-
-          <table  class="orderList bordered centered">
-    <thead>
-      <tr>
-          <th>Queue Number</th>
-          <th>Name</th>
-          <th>Email Id</th>
-          <th>Queue Code</th>
-          <th>Operations</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
-        <td>D5467</td>
-        <td>
-          <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-          <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Alvin</td>
+                <td>bis.banerjee.bb@gmail.com</td>
+                <td>D5467</td>
+                <td>
+                  <i class="fa fa-check fa-2x orderDone" aria-hidden="true" ></i>
+                  <i class="fa fa-times fa-2x orderCancelled" aria-hidden="true"></i>
+                  <i class="fa fa-clock-o fa-2x orderWaiting" aria-hidden="true" ></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <!-- <div class="col s2">
-        &nbsp;
-        <br><br><br><br><br><br><br><br>
-        <div class="row">
-      <div class="col s12">
-        <div class="card-panel middle" style="background-color: #46b56d">
-          <span class="white-text">Time Now
-          </span>
-          <hr>
+    </section>
 
-        </div>
-      </div>
-    </div>
 
-      </div> -->
-    </div>
-</div>
-</div>
-<button type="button" class="fixed_button" id="chatButton" onclick="toggle()"><h5 id="hideMe">Live Chat</h5></div>
-<div class="fixed_button_append" id="hide" style="display:none">
-  <h5 class="h4-white">Counter Chat</h5>
-  <hr>
-  <br>
-  <div class="chip middle2">
-  <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-    Jane Doe : D456
 
-  </div>
-  <br>
-  <div class="chip middle2">
-  <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
-    Mary Doe : T678
-  </div>
-  <div class="chip middle2">
-  <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
-    Mary Doe : T678
-  </div>
-  <div class="chip middle2">
-  <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-    Jane Doe : D456
-  </div>
-  <div class="chip middle2">
-  <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-    Jane Doe : D456
 
-  </div>
-  <div class="chip middle2">
-  <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
-    Mary Doe : T678
-  </div>
-</div>
-
-<script src="admin_dash.js"></script>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>
