@@ -23,35 +23,41 @@
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
-      google.charts.load('current', {'packages':['bar']});
-      google.charts.setOnLoadCallback(drawStuff);
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
 
-      function drawStuff() {
-        var data = new google.visualization.arrayToDataTable([
-          ['Time Slot', 'Crowd'],
-          ["King's pawn (e4)", 44],
-          ["Queen's pawn (d4)", 56],
-          ["Knight to King 3 (Nf3)", 35],
-          ["Queen's bishop pawn (c4)", 10],
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales'],
+            ['6-7 am',  100],
+            ['7-8 am',  117],
+            ['8-9 am',  66],
+            ['9-10 am',  94],
+            ['10-11 am',  78],
+            ['11-12 am',  50],
+            ['12-1 pm',  60],
+            ['1-2 pm',  43],
+            ['2-3 pm',  78],
+            ['3-4 pm',  32],
+            ['4-5 pm',  63],
+            ['5-6 pm',  52],
+            ['6-7 pm',  87],
+            ['7-8 pm',  97],
+            ['8-9 pm',  30],
+          ]);
 
-        ]);
+          var options = {
+            title: 'Time Slot analytics',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
 
-        var options = {
-          width: 800,
-          legend: { position: 'none' },
-          chart: {
-            subtitle: '' },
-          axes: {
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-          },
-          bar: { groupWidth: "90%" }
-        };
+          chart.draw(data, options);
+        }
+      </script>
 
-        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
-        // Convert the Classic options to Material options.
-        chart.draw(data, google.charts.Bar.convertOptions(options));
-      };
-    </script>
 
   <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -78,7 +84,7 @@
         ]);
 
         var options = {
-          title: 'Live Customer Footfall',
+          title: 'Hourly Analytics',
           hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
           vAxis: {minValue: 0}
         };
@@ -105,7 +111,7 @@
           ]);
 
           var options = {
-            title: 'Live Customer Footfall',
+            title: 'Daily Analytics',
             hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
             vAxis: {minValue: 0}
           };
@@ -113,6 +119,38 @@
           var chart = new google.visualization.AreaChart(document.getElementById('chart_div_2'));
           chart.draw(data, options);
         }
+      </script>
+      <script type="text/javascript">
+      oogle.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['City', '2010 Population',],
+      ['New York City, NY', 8175000],
+      ['Los Angeles, CA', 3792000],
+      ['Chicago, IL', 2695000],
+      ['Houston, TX', 2099000],
+      ['Philadelphia, PA', 1526000]
+    ]);
+
+    var options = {
+      title: 'Population of Largest U.S. Cities',
+      chartArea: {width: '50%'},
+      hAxis: {
+        title: 'Total Population',
+        minValue: 0
+      },
+      vAxis: {
+        title: 'City'
+      }
+    };
+
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div_4'));
+
+    chart.draw(data, options);
+  }
       </script>
       <script type="text/javascript">
           google.charts.load('current', {'packages':['corechart']});
@@ -129,7 +167,7 @@
             ]);
 
             var options = {
-              title: 'Live Customer Footfall',
+              title: 'Weekly analytics',
               hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
               vAxis: {minValue: 0}
             };
@@ -211,7 +249,7 @@
     <br><br><br><br><br><br><br>
     <div class="titlePush" style="border: 1px solid #002642; background-color: white; height: 90px; padding-top: 10px;"  >
 
-      <h4 class="middle-colored" id="title2" ><b>Live customer footfall</b></h4>
+      <h4 class="middle-colored" id="title2" ><b>Counter 1 - Live Footfall</b></h4>
       <br>
       <br>
     </div>
@@ -226,9 +264,9 @@
   <span class="white-text" style="font-size: 16px;  ">Waiting customers</span>
   <br>
   <br>
-  5078
+  5:00 mins
   <hr>
-  <span class="white-text" style="font-size: 16px;  ">Total Count </span>
+  <span class="white-text" style="font-size: 14px;  ">Average Waiting Time </span>
   <br>
   <br>
   567
@@ -238,24 +276,44 @@
   </div>
   </div>
 </div>
-      <div class="col s10 ">
-        <button class="waves-effect waves-light btn" onclick="showHourly()">Hourly Analytics</button>
-        <button class="waves-effect waves-light btn" onclick="showDaily()">Daily Analytics</button>
-        <button class="waves-effect waves-light btn" onclick="showWeekly()">Weekly Analytics</button>
-        <button class="waves-effect waves-light btn" onclick="showPeak()">Time wise crowd</button>
+<!--
+<button class="waves-effect waves-light btn" onclick="showHourly()">Hourly Analytics</button>
+<button class="waves-effect waves-light btn" onclick="showDaily()">Daily Analytics</button>
+<button class="waves-effect waves-light btn" onclick="showWeekly()">Weekly Analytics</button>
+<button class="waves-effect waves-light btn" onclick="showPeak()">Time wise crowd</button> -->
 
-            <div id="chart_div" style="width: 1100px; height: 500px; " ></div>
-            <div id="chart_div_2" style="width: 110px; height: 50px; " ></div>
-            <div id="chart_div_3" style="width: 11px; height: 5px;" ></div>
-            <!-- <div id="top_x_div" style="width: 10px; height: 4px;"></div> -->
 
-          </div>
+  <div class="col s5">
+    <div id="chart_div" style="width: 540px; height: 200px; " ></div>
+    <hr>
+    <div id="chart_div_3" style="width: 540px; height: 200px; " ></div>
+
+  </div>
+  <div class="col s5">
+    <div id="chart_div_2" style="width: 540px; height: 200px; " ></div>
+    <hr>
+    <div id="curve_chart" style="width: 540px; height: 200px"></div>
+
+  </div>
+</div>
+    <div class="btn-grp">
+        <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-1:</b> 45<span class="tooltiptext">5 mins</span>
+        </a>
+        <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-2:</b> 21<span class="tooltiptext">3 mins</span>
+        </a>
+        <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-3:</b> 56<span class="tooltiptext">7 mins</span>
+        </a>
+        <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-4 </b>: 12<span class="tooltiptext">10 mins</span>
+        </a>
+        <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-5:</b> 89<span class="tooltiptext">3 mins</span>
+        </a>
 
       </div>
+
     </div>
 </div>
 </div>
-<button type="button" class="fixed_button" id="chatButton" onclick="toggle()"><h5 id="hideMe">Live Chat</h5></div>
+<button type="button" class="fixed_button" id="chatButton" onclick="toggle()" ><h5 id="hideMe">Live Chat</h5></div>
 <div class="fixed_button_append" id="hide" style="display:none">
   <h5 class="h4-white">Counter Chat</h5>
   <hr>
