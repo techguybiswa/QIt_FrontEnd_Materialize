@@ -177,3 +177,17 @@ hr.style8:after {
 clock {
   align: right;
 }
+.waves-light {
+  -webkit-transition-duration: 0.4s; /* Safari */
+ transition-duration: 0.4s;
+  background-color: #327cad;
+}
+
+
+.button:hover  {
+  background-color: #07293f;
+
+}
+stayHidden {
+  display: none;
+}
