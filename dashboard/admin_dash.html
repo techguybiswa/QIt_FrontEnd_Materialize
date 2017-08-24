@@ -22,7 +22,79 @@
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales'],
+            ['6-7 am',  100],
+            ['7-8 am',  117],
+            ['8-9 am',  66],
+            ['9-10 am',  94],
+            ['10-11 am',  78],
+            ['11-12 am',  50],
+            ['12-1 pm',  60],
+            ['1-2 pm',  43],
+            ['2-3 pm',  78],
+            ['3-4 pm',  32],
+            ['4-5 pm',  63],
+            ['5-6 pm',  52],
+            ['6-7 pm',  87],
+            ['7-8 pm',  97],
+            ['8-9 pm',  30],
+          ]);
+
+          var options = {
+            title: 'Time Slot analytics',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Time', 'Footfall per hour'],
+                ['7 am',  100],
+                ['8 am',  117],
+                ['9 am',  66],
+                ['10 am',  94],
+                ['11 am',  78],
+                ['12 am',  50],
+                ['1 pm',  60],
+                ['2 pm',  43],
+                ['3 pm',  78],
+                ['4 pm',  32],
+                ['5 pm',  63],
+                ['6 pm',  52],
+                ['7 pm',  87],
+                ['8 pm',  97],
+                ['9 pm',  30],
+              ]);
+
+              var options = {
+                title: 'Hourly Analytics',
+                hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0}
+              };
+
+              var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+              chart.draw(data, options);
+            }
+          </script>
 </head>
+<body style="overflow-x: hidden">
     <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
@@ -104,123 +176,38 @@
 <div class="col s2">
   <div class="row">
   <div class="col s12">
-  <div class="card-panel2  middle enhanceUI" style="background-color: #575c82; min-height: 10px;">
-    <i class="fa fa-check orderDone middle" aria-hidden="true" ></i>
+    <br><br><br>
+  <div class="card-panel2  middle enhanceUI" >
+  <p class="showBlue">23</p>
   <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Done</span>
+  <span class="text" style="font-size: 16px; color:#291a44  "><b>Queue number</b></span>
 
   <br>
-  <br>
-  <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
+  <input type="number" name="getOTP" value="" id="getOTP" placeholder="Enter OTP" class="showBlue">
+  <a class="waves-effect waves-light btn getOTP">Confirm</a>
+
+  <!-- <br>
+  <p class="showBlue">65</p>
   <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Cancelled</span>
-  <br>
-  <br>
-  <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-  <hr>
-  <span class="white-text" style="font-size: 20px;  ">Order Waiting</span>
+  <p class=" showBlue " style="font-size: 16px">
+    Total queue
+  </p> -->
 
   </div>
   </div>
   </div>
-
-<!-- <div class="row">
-<div class="col s12">
-<div class="card-panel  middle" style="background-color: #541824">
-  <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-<hr>
-<span class="white-text" style="font-size: 20px;  ">Order Cancel</span>
-</div>
-</div>
-</div> -->
-<!-- <div class="row">
-<div class="col s12">
-<div class="card-panel  middle" style="background-color: #e0ed38">
-  <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-
-<hr>
-<span class="white-text" style="font-size: 20px;  ">Order Waiting</span>
-</div>
-</div>
-</div> -->
-
 </div>
 
-      <div class="col s10 ">
-        <div class="card-panel card-queueList pre-scrollable" style="background-color: white">
-          <!-- <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Mark Shank : D455
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Susan Hill : D356
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Richy Mann : D576
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Ohyt Tay : D456
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Holli Hella : D456
-
-
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
-          <div class="chip middle middle-left">
-          <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
-            Brack Obama : D456
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-          </div>
 
 
 
- -->
-
-          <!-- <br>
-          <div class="chip middle">
-          <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
-            Mary Doe : T678
-            &nbsp;
-            <i class="fa fa-check orderDone" aria-hidden="true" ></i>
-            <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-            <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
-
-          </div> -->
-
-          <table  class="orderList bordered centered">
+      <div class="col s5 ">
+        <div class="card-panel card-queueList" style="background-color: white">
+          <table  class="orderList bordered centered scrollTable" >
     <thead>
       <tr>
           <th>Queue Number</th>
           <th>Name</th>
-          <th>Email Id</th>
           <th>Queue Code</th>
           <th>Operations</th>
       </tr>
@@ -230,78 +217,78 @@
       <tr>
         <td>1</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>2</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>3</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>4</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>5</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>6</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
       <tr>
         <td>7</td>
         <td>Alvin</td>
-        <td>bis.banerjee.bb@gmail.com</td>
+
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa fa-clock-o orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
         </td>
       </tr>
     </tbody>
@@ -309,21 +296,13 @@
 
         </div>
       </div>
-      <!-- <div class="col s2">
-        &nbsp;
-        <br><br><br><br><br><br><br><br>
-        <div class="row">
-      <div class="col s12">
-        <div class="card-panel middle" style="background-color: #46b56d">
-          <span class="white-text">Time Now
-          </span>
-          <hr>
+      <div class="col s4" >
+        <div id="curve_chart" style="width: 500px; height: 200px"></div>
+        <hr style="width: 500px;">
+        <div id="chart_div" style="width: 500px; height: 200px; " ></div>
 
-        </div>
+
       </div>
-    </div>
-
-      </div> -->
     </div>
 </div>
 </div>
@@ -353,7 +332,6 @@
   <div class="chip middle2">
   <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
     Jane Doe : D456
-
   </div>
   <div class="chip middle2">
   <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">

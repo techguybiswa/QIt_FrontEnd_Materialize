@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('#animate_row').addClass('animated fadeInUp');
   $('#title2').addClass('animated slideInLeft');
   $('#chatButton').addClass('animated rotateInDownRight');
+  $('input#input_text, textarea#textarea1').characterCounter();
 
 
 

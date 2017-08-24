@@ -34,7 +34,7 @@ h4{
 .card-panel2 {
   background-color: #575c82;
   padding: 10px;
-  padding-top:30px;
+  padding-top:0px;
   padding-bottom: 30px;
   border-radius: 5px 5px 5px 5px;
 }
@@ -49,7 +49,13 @@ h4{
   /*box-shadow: 10px 10px grey;*/
 }
 .enhanceUI {
-  background-color:#acb4ef;
+  background-color: white;
+  min-height: 10px;
+  color:#291a44;
+  border: 0.5px solid #463566;
+  box-shadow: 10px 10px 5px grey;
+  font-size:  32px;
+  align: center;
 }
 .middle {
   font-family: 'Raleway', sans-serif;
@@ -139,7 +145,8 @@ smaller {
   border: 1px solid blue;*/
   border: 1px dashed #ddd;
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
-  height: 500px;
+  height: 400px;
+  width: 500px;
 }
 hr.style11 {
 	height: 6px;
@@ -156,7 +163,7 @@ hr.style15:after {
 	position: relative;
 	top: -15px;
 	padding: 0 10px;
-	background: #f0f0f0;
+	background: #f0f0f0
 	color: #8c8b8b;
 	font-size: 18px;
 }
@@ -176,4 +183,18 @@ hr.style8:after {
 }
 clock {
   align: right;
+}
+.showBlue {
+  color: #463566;
+  font-weight: bold;
+
+}
+.getOTP {
+  align: center;
+}
+.scrollTable {
+   overflow-y: scroll;
+   height:330px;
+   display:block;
+   width: 400px;
 }
