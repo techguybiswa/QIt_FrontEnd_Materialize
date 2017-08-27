@@ -3,7 +3,6 @@ $(document).ready(function(){
   $('#animate_row').addClass('animated fadeInUp');
   $('#title2').addClass('animated slideInLeft');
   $('#chatButton').addClass('animated rotateInDownRight');
-  $('input#input_text, textarea#textarea1').characterCounter();
 
 
 
@@ -24,3 +23,14 @@ function toggle() {
         x.style.display = 'none';
     }
 }
+$(".orderWaiting").click(function(){
+  $('#counterSend').css('display', 'block');
+  $('#counterSend').addClass('animated bounce');
+
+
+});
+$('#counterDone').click(function(){
+  $('#counterSend').css('display', 'none');
+
+
+});

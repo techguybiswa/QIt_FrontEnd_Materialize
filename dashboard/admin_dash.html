@@ -168,6 +168,7 @@
     <br><br><br><br><br><br>
     <div class="titlePush" style="border: 1px solid #002642; background-color: white">
       <h4 class="middle-colored" id="title2" ><b>Orders Queued</b></h4>
+
     </div>
 
   </div>
@@ -185,19 +186,11 @@
   <br>
   <input type="number" name="getOTP" value="" id="getOTP" placeholder="Enter OTP" class="showBlue">
   <a class="waves-effect waves-light btn getOTP">Confirm</a>
-
-  <!-- <br>
-  <p class="showBlue">65</p>
-  <hr>
-  <p class=" showBlue " style="font-size: 16px">
-    Total queue
-  </p> -->
-
   </div>
   </div>
   </div>
 </div>
-      <div class="col s5 ">
+      <div class="col s6 " >
         <div class="card-panel card-queueList" style="background-color: white">
           <table  class="orderList bordered centered scrollTable" >
     <thead>
@@ -212,8 +205,7 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td>Alvin</td>
-
+        <td>Sam Avin</td>
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
@@ -223,7 +215,7 @@
       </tr>
       <tr>
         <td>2</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
@@ -234,18 +226,20 @@
       </tr>
       <tr>
         <td>3</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
           <i class="fa fa-check orderDone" aria-hidden="true" ></i>
           <i class="fa fa-times orderCancelled" aria-hidden="true"></i>
-          <i class="fa  fa-align-justify orderWaiting" aria-hidden="true" ></i>
+          <i class="fa  fa-align-justify orderWaiting waves-effect waves-light modal-trigger" aria-hidden="true" ></i>
+
+
         </td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
@@ -256,7 +250,7 @@
       </tr>
       <tr>
         <td>5</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
@@ -267,7 +261,7 @@
       </tr>
       <tr>
         <td>6</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
@@ -278,7 +272,7 @@
       </tr>
       <tr>
         <td>7</td>
-        <td>Alvin</td>
+        <td>Sam Avin</td>
 
         <td>D5467</td>
         <td>
@@ -289,13 +283,31 @@
       </tr>
     </tbody>
   </table>
+  <br>
+  <div class="row"  id="counterSend" style="display: none">
+    <div class="col s9">
+      <select class="browser-default" style="padding-top: 10px; width: 400px">
+        <option value="" disabled selected>Choose counter number</option>
+        <option value="1">Counter 1</option>
+        <option value="2">Counter 2</option>
+        <option value="3">Counter 3</option>
+        <option value="4">Counter 4</option>
+        <option value="5">Counter 5</option>
 
-        </div>
+      </select>
+    </div>
+    <div class="col s3">
+      <a class="waves-effect waves-light btn" style="margin-right: 40px;" id="counterDone">Done</a>
+
+    </div>
+  </div>
+
+  </div>
       </div>
-      <div class="col s4" >
-        <div id="curve_chart" style="width: 500px; height: 200px"></div>
-        <hr style="width: 500px;">
-        <div id="chart_div" style="width: 500px; height: 200px; " ></div>
+      <div class="col s3" >
+        <div id="curve_chart" style="width: 430px; height: 210px"></div>
+        <hr style="width: 430px;">
+        <div id="chart_div" style="width: 430px; height: 210px; " ></div>
 
 
       </div>
@@ -309,7 +321,7 @@
         </a>
         <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-4 </b>: 12<span class="tooltiptext">10 mins</span>
         </a>
-    
+
 
       </div>
 </div>
@@ -346,6 +358,7 @@
     Mary Doe : T678
   </div>
 </div>
+
 
 <script src="admin_dash.js"></script>
 

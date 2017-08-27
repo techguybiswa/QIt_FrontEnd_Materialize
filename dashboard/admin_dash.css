@@ -122,13 +122,23 @@ h4{
   border-radius: 10px 10px 0px 0px;
 
 }
+.orderDone {
+  padding: 3px;
+}
 .orderDone:hover {
   color: #6cf26a;
   cursor: hand;
 }
+.orderCancelled{
+  padding: 3px;
+}
 .orderCancelled:hover {
   color: red;
   cursor: hand;
+}
+.orderWaiting {
+  padding: 3px;
+
 }
 .orderWaiting:hover {
   color: yellow;
@@ -145,8 +155,8 @@ smaller {
   border: 1px solid blue;*/
   border: 1px dashed #ddd;
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
-  height: 400px;
-  width: 500px;
+  height: 430px;
+  width: 650px;
 }
 hr.style11 {
 	height: 6px;
@@ -196,7 +206,7 @@ clock {
    overflow-y: scroll;
    height:330px;
    display:block;
-   width: 400px;
+   width: 600px;
 }
 
 
@@ -260,4 +270,14 @@ clock {
 
 .btn-grp {
   padding-left: 30px;
+}
+
+td {
+  padding-left: 40px;
+  padding-right: 40px;
+    overflow-y: hidden;
+}
+th {
+  padding-left: 10px;
+
 }
