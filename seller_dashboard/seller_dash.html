@@ -109,9 +109,6 @@
   <div class="title_box" >
     <h4 id="title_qit" >Dashboard</h4>
   </div>
-  <!-- <hr class="style8">
-  <hr class="style8"> -->
-
 <div class="container-fluid">
   <div class="row" id="animate_row" style="padding-bottom:-10px;">
     <div class="col s4">
@@ -184,8 +181,11 @@
   <span class="text" style="font-size: 16px; color:#291a44  "><b>Queue number</b></span>
 
   <br>
-  <input type="number" name="getOTP" value="" id="getOTP" placeholder="Enter OTP" class="showBlue">
-  <a class="waves-effect waves-light btn getOTP">Confirm</a>
+  <form class="" action="" method="">
+    <input type="number" name="getOTP" value="" id="getOTP" placeholder="Enter OTP" class="showBlue">
+    <button class="waves-effect waves-light btn getOTP">Confirm</button>
+  </form>
+
   </div>
   </div>
   </div>
@@ -285,21 +285,24 @@
   </table>
   <br>
   <div class="row"  id="counterSend" style="display: none">
-    <div class="col s9">
-      <select class="browser-default" style="padding-top: 10px; width: 400px">
-        <option value="" disabled selected>Choose counter number</option>
-        <option value="1">Counter 1</option>
-        <option value="2">Counter 2</option>
-        <option value="3">Counter 3</option>
-        <option value="4">Counter 4</option>
-        <option value="5">Counter 5</option>
+    <form class="" action="" method="">
+      <div class="col s9">
+        <select class="browser-default" style="padding-top: 10px; width: 400px">
+          <option value="" disabled selected>Choose counter number</option>
+          <option value="1">Counter 1</option>
+          <option value="2">Counter 2</option>
+          <option value="3">Counter 3</option>
+          <option value="4">Counter 4</option>
+          <option value="5">Counter 5</option>
 
-      </select>
-    </div>
-    <div class="col s3">
-      <a class="waves-effect waves-light btn" style="margin-right: 40px;" id="counterDone">Done</a>
+        </select>
+      </div>
+      <div class="col s3">
+        <a class="waves-effect waves-light btn" style="margin-right: 40px;" id="counterDone">Done</a>
 
-    </div>
+      </div>
+    </form>
+
   </div>
 
   </div>
