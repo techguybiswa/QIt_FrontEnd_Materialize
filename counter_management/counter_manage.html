@@ -1,0 +1,224 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Counter Manage</title>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" href="counter_manage.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script></script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="fusion.js"></script>
+  <script type="text/javascript" src="theme.js"></script>
+  <script type="text/javascript" src="counter_manage.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales'],
+            ['6-7 am',  100],
+            ['7-8 am',  117],
+            ['8-9 am',  66],
+            ['9-10 am',  94],
+            ['10-11 am',  78],
+            ['11-12 am',  50],
+            ['12-1 pm',  60],
+            ['1-2 pm',  43],
+            ['2-3 pm',  78],
+            ['3-4 pm',  32],
+            ['4-5 pm',  63],
+            ['5-6 pm',  52],
+            ['6-7 pm',  87],
+            ['7-8 pm',  97],
+            ['8-9 pm',  30],
+          ]);
+
+          var options = {
+            title: 'Time Slot analytics',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+          chart.draw(data, options);
+        }
+      </script>
+
+        <script type="text/javascript">
+            google.charts.load('current', {'packages':['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+              var data = google.visualization.arrayToDataTable([
+                ['Time', 'Footfall per hour'],
+                ['7 am',  100],
+                ['8 am',  117],
+                ['9 am',  66],
+                ['10 am',  94],
+                ['11 am',  78],
+                ['12 am',  50],
+                ['1 pm',  60],
+                ['2 pm',  43],
+                ['3 pm',  78],
+                ['4 pm',  32],
+                ['5 pm',  63],
+                ['6 pm',  52],
+                ['7 pm',  87],
+                ['8 pm',  97],
+                ['9 pm',  30],
+              ]);
+
+              var options = {
+                title: 'Hourly Analytics',
+                hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
+                vAxis: {minValue: 0}
+              };
+
+              var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+              chart.draw(data, options);
+            }
+          </script>
+</head>
+<body style="overflow-x: hidden">
+    <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="navbar-heading" style="font-family: 'Indie Flower', cursive;"> &nbsp;Q-It</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#"><i class="material-icons left">people_outline</i>Sign up</a></li>
+          <li><a href="#"><i class="material-icons left">subdirectory_arrow_right</i>Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="title_box" >
+    <h4 id="title_qit" >Counter Management</h4>
+  </div>
+<div class="container-fluid">
+  <div class="row" id="animate_row" style="padding-bottom:-10px;">
+    <div class="col s4">
+      <div class="col s12">
+        <div class="card-panel ">
+          <div class="row">
+            <div class="col s12 middle">
+              Total Counters
+            </div>
+            <hr>
+            <div class="col s12 middle">
+              05
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col s4">
+      <div class="row">
+            <div class="col s12">
+              <div class="card-panel moveUp">
+                <div class="row">
+                  <div class="col s12 middle">
+                    Counter Add
+                  </div>
+                  <hr>
+                  <div class="col s12 middle">
+                    <i class="small material-icons">add</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+<div class="col s4">
+  <div class="row" id="counterDetails">
+        <div class="col s12">
+          <div class="card-panel moveUp" style="margin-bottom: 10px;">
+            <div class="row">
+              <div class="col s12 middle">
+                Add counter details
+              </div>
+              <hr>
+              <div class="col s4 middle" >
+                <input type="number" id="counterId" placeholder="Counter Id">
+              </div>
+              <div class="col s6 middle" >
+                <input type="number" id="counterNo" placeholder="Counter Number">
+              </div>
+              <div class="col s2 middle" >
+                <input type="number" id="counterNo" placeholder="Counter Number">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+</div>
+
+  <div class="row">
+    <div class="col s4">
+      <div class="row">
+           <div class="col s12">
+             <div class="card-panel ">
+               <div class="row">
+                 <div class="col s12 middle">
+                   Bouncing off customers
+                 </div>
+                 <hr>
+                 <div class="col s12 middle">
+                   4000
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+
+    <div class="col s4">
+      <div class="row">
+           <div class="col s12">
+             <div class="card-panel ">
+               <div class="row">
+                 <div class="col s12 middle">
+                   Bouncing off customers
+                 </div>
+                 <hr>
+                 <div class="col s12 middle">
+                   4000
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+    </div>
+
+
+  </div>
+    <br><br><br><br><br><br>
+
+
+  </div>
+
+
+</div>
+</div>
+
+
+<script src="counter_manage.js"></script>
+
+  </body>
+</html>
