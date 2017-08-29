@@ -17,3 +17,6 @@ $('#addCounter').click(function(){
 $('#saveCounterDetails').click(function(){
    $('#counterDetails').css("display", "none");
 });
+$("deleteCounter").click(function(){
+   $("deleteCounter").css("display", "none");
+});

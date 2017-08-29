@@ -12,6 +12,7 @@ body {
   background-color: white;
   padding: 2px;
   border-bottom: 1px solid #002642;
+  text-align: center;
 }
 html {
    font-family: GillSans, Calibri, Trebuchet, sans-serif;
@@ -23,7 +24,7 @@ html {
  }
 h4{
   font-family: 'Pacifico', cursive;
-  color: #021026;
+  color: #021026;moveUp
   text-align: center;
 }
 .card-panel {
@@ -118,5 +119,13 @@ stayHidden {
   padding-left: 30px;
 }
 .counterCard {
+background-color: #4166a0;
+}
+.material-icons {
+  cursor:hand;
 
+}
+
+.navbar-heading {
+  font-size: 46px;
 }
