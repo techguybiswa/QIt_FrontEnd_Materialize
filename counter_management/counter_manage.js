@@ -16,7 +16,13 @@ $('#addCounter').click(function(){
 });
 $('#saveCounterDetails').click(function(){
    $('#counterDetails').css("display", "none");
+   jQuery('#allCounters').append( $("<div>").load("ajax.txt"));
+
 });
-$("deleteCounter").click(function(){
-   $("deleteCounter").css("display", "none");
-});
+// $(".deleteCounter").click(function(){
+//
+//
+// });
+function hideMe(Cid) {
+  $("#"+Cid).remove();
+}
