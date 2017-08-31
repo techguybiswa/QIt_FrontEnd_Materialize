@@ -164,13 +164,24 @@
     </div>
     <br><br><br><br><br><br>
     <div class="titlePush" style="border: 1px solid #002642; background-color: white">
-      <h4 class="middle-colored" id="title2" ><b>Orders Queued</b></h4>
+      <div class="row">
+        <div class="col s4">
+          &nbsp;
+        </div>
+        <div class="col s3">
+          <h7 class="middle-colored" style="margin-bottom: 50px"><b>Orders Queued</b></h7>
+        </div>
+        <div class="col s2">
+           <button class="waves-effect waves-light btn" style="padding-bottom: 10px; background-color: green"  id="serve" onclick="serveToggle()">Serving On</button>
+        <button class="waves-effect waves-light btn" style="padding-bottom: 10px; display:  block; background-color: red; display: none"  id="serve2" onclick="serveToggle()">Serving Off</button>
+      </div>
+      </div>
 
     </div>
 
   </div>
 
-<div class="row">
+<div class="row" id="dashboardMain">
 <div class="col s2">
   <div class="row">
   <div class="col s12">
@@ -294,7 +305,6 @@
           <option value="3">Counter 3</option>
           <option value="4">Counter 4</option>
           <option value="5">Counter 5</option>
-
         </select>
       </div>
       <div class="col s3">
@@ -311,8 +321,6 @@
         <div id="curve_chart" style="width: 430px; height: 210px"></div>
         <hr style="width: 430px;">
         <div id="chart_div" style="width: 430px; height: 210px; " ></div>
-
-
       </div>
     </div>
     <div class="btn-grp">
@@ -324,8 +332,6 @@
         </a>
         <a class="btn tooltip" data-position="top" data-delay="50" data-tooltip="I am a tooltip"><b>Counter-4 </b>: 12<span class="tooltiptext">10 mins</span>
         </a>
-
-
       </div>
 </div>
 </div>
@@ -337,7 +343,6 @@
   <div class="chip middle2">
   <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
     Jane Doe : D456
-
   </div>
   <br>
   <div class="chip middle2">
@@ -356,16 +361,11 @@
   <img src="http://www.qygjxz.com/data/out/190/4477370-profile-pics.png" alt="Contact Person">
     Jane Doe : D456
   </div>
-
-
   <div class="chip middle2">
   <img src="http://www.trickscity.com/wp-content/uploads/2016/07/Cool-And-Stylish-Profile-Pictures-For-Facebook-For-Girls-17-1024x993.jpg" alt="Contact Person">
     Mary Doe : T678
   </div>
 </div>
-
-
 <script src="seller_dash.js"></script>
-
   </body>
 </html>

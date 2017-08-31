@@ -24,76 +24,6 @@
 
   <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript">
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ['Year', 'Sales'],
-            ['6-7 am',  100],
-            ['7-8 am',  117],
-            ['8-9 am',  66],
-            ['9-10 am',  94],
-            ['10-11 am',  78],
-            ['11-12 am',  50],
-            ['12-1 pm',  60],
-            ['1-2 pm',  43],
-            ['2-3 pm',  78],
-            ['3-4 pm',  32],
-            ['4-5 pm',  63],
-            ['5-6 pm',  52],
-            ['6-7 pm',  87],
-            ['7-8 pm',  97],
-            ['8-9 pm',  30],
-          ]);
-
-          var options = {
-            title: 'Time Slot analytics',
-            curveType: 'function',
-            legend: { position: 'bottom' }
-          };
-
-          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-          chart.draw(data, options);
-        }
-      </script>
-
-        <script type="text/javascript">
-            google.charts.load('current', {'packages':['corechart']});
-            google.charts.setOnLoadCallback(drawChart);
-
-            function drawChart() {
-              var data = google.visualization.arrayToDataTable([
-                ['Time', 'Footfall per hour'],
-                ['7 am',  100],
-                ['8 am',  117],
-                ['9 am',  66],
-                ['10 am',  94],
-                ['11 am',  78],
-                ['12 am',  50],
-                ['1 pm',  60],
-                ['2 pm',  43],
-                ['3 pm',  78],
-                ['4 pm',  32],
-                ['5 pm',  63],
-                ['6 pm',  52],
-                ['7 pm',  87],
-                ['8 pm',  97],
-                ['9 pm',  30],
-              ]);
-
-              var options = {
-                title: 'Hourly Analytics',
-                hAxis: {title: 'Time of the day',  titleTextStyle: {color: '#333'}},
-                vAxis: {minValue: 0}
-              };
-
-              var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
-              chart.draw(data, options);
-            }
-          </script>
 </head>
 <body style="overflow-x: hidden">
     <div class="navbar-fixed">
@@ -153,15 +83,12 @@
                 Add counter details
               </div>
               <hr>
-
                 <input type="text" id="username" placeholder="Enter Username" style="color: white;">
                 <input type="text" id="fname" placeholder="Enter first name" style="color: white;">
                 <input type="text" id="lname" placeholder="Enter last name" style="color: white;">
                 <input type="password" id="pass" placeholder="Enter password" style="color: white;">
                 <input type="number" id="gId" placeholder="Enter group ID" style="color: white;">
                 <button class="waves-effect waves-light btn" style="margin-left: 60px" id="saveCounterDetails">Done</button>
-
-
               <div class="col s2 middle" >
 
               </div>
@@ -171,19 +98,11 @@
       </div>
 </div>
 </div>
-
   <div class="row" id="allCounters">
-
   </div>
-
-
   </div>
     <br><br><br><br><br><br>
-
-
   </div>
-
-
 </div>
 </div>
 <script src="counter_manage.js"></script>

@@ -3,11 +3,9 @@ $(document).ready(function(){
   $('#animate_row').addClass('animated fadeInUp');
   $('#title2').addClass('animated slideInLeft');
   $('#chatButton').addClass('animated rotateInDownRight');
-  $('#counterDetails').addClass('animated bounceInLeft');
+  $('#counterDetails').addClass('animated bounceInRight');
 
-  // $('#chart_div').addClass('animated fadeInUp');
-  // $('#chart_div_2').addClass('animated fadeInUp stayHidden');
-  // $('#chart_div_3').addClass('animated fadeInUp stayHidden');
+
 
 });
 

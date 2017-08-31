@@ -31,6 +31,31 @@ $(".orderWaiting").click(function(){
 });
 $('#counterDone').click(function(){
   $('#counterSend').css('display', 'none');
-
-
 });
+var flag = 0;
+
+
+function serveToggle()
+{
+
+  console.log("serveToggle");
+  console.log("val of flag: " + flag);
+  if(flag==0)
+  {
+    console.log("entered 1");
+    document.getElementById('serve2').style.display= 'block';
+    document.getElementById('serve').style.display= 'none';
+    $("#dashboardMain *").attr("disabled", true);
+    $('#dashboardMain').addClass("blackout");
+    flag =1;
+  }
+  else if(flag ==1)
+  {
+    document.getElementById('serve2').style.display= 'none';
+    document.getElementById('serve').style.display= 'block';
+    $('#dashboardMain').removeClass("blackout");
+    $("#dashboardMain *").attr("disabled", false);
+
+    flag = 0;
+  }
+}

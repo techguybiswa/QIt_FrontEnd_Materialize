@@ -281,3 +281,19 @@ th {
   padding-left: 10px;
 
 }
+.red-cell {
+  background-color: red;
+}
+
+
+.blackout {
+
+opacity: 0.4;
+ transition: all 0.5s;
+ -webkit-transition: all 1.0s;
+}
+.slideOffBlackOut {
+    opacity: 0;
+   transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+}
