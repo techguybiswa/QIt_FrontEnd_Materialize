@@ -169,7 +169,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2>Lets collaborate now!</h2>
+					<h2>Ads Manager.</h2>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -206,10 +206,9 @@
 
                             <div class="form-group">
                               <label for="adImg">Upload image: </label>
-                              <input type="file" name="adImg" id="adImg">
+                              <input type="text" name="adImg" class="form-control" id="adImg" placeholder="Enter image url" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  onfocusout="checkImage()" onfocusin="changeBackground()"/>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
@@ -279,7 +278,7 @@
 
                     </script>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs" name="btnContactUs">
+                        <button type="submit" class="btn btn-skin pull-right" id="btnSubmit" name="btnSubmit">
                             Submit! </button>
                     </div>
                 </div>
@@ -341,7 +340,28 @@
 			</div>
 		</div>
 	</footer>
+  <script type="text/javascript">
+  function changeBackground() {
+    document.getElementById('adImg').style.backgroundColor = '#ffffff';
 
+
+  }
+  function checkImage()
+  {
+    var url = document.getElementById('adImg').value;
+    // var x = url.length();
+    var extension = url.split(".").reverse();
+    console.log("array at 0 index: " + extension[0]);
+
+    if(!((extension[0] == 'png') || ((extension[0] == 'jpg')) || ((extension[0] == 'jpeg'))))
+    {
+      document.getElementById('adImg').style.backgroundColor = '#efd4cb';
+      alert("Please verify the image url");
+
+    }
+    console.log(extension);
+  }
+  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3JN4_CZKLGEP-XFtXzKhD-xqcc2xWu4k&callback=initMap" async defer></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
