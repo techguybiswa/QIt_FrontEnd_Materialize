@@ -214,6 +214,7 @@
                       <div class="form-group">
                           <label for="adInfo">
                               Info</label>
+
                           <input type="text" name="adInfo" class="form-control" id="adInfo" placeholder="Enter details of the ad" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                           <div class="validation"></div>
                       </div>
@@ -348,17 +349,35 @@
   }
   function checkImage()
   {
+    var flag =0;
     var url = document.getElementById('adImg').value;
+    var url2 = document.getElementById('adImg').value;;
     // var x = url.length();
+    var start =  url2.split(":");
+    console.log("value of start[0]: " + start[0]);
+    if((start[0]=="http")||(start[0]=="https"))
+    {
+      flag=0;
+    }
+    else {
+      flag = 1;
+    }
     var extension = url.split(".").reverse();
     console.log("array at 0 index: " + extension[0]);
 
     if(!((extension[0] == 'png') || ((extension[0] == 'jpg')) || ((extension[0] == 'jpeg'))))
     {
+      flag =1;
+    }
+    if(flag == 1)
+    {
       document.getElementById('adImg').style.backgroundColor = '#efd4cb';
+
       alert("Please verify the image url");
 
+
     }
+
     console.log(extension);
   }
   </script>
