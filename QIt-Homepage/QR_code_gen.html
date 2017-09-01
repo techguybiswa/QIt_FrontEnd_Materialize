@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Q-It : Disrupting Queues - Join Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+  <style media="screen">
+  <script src=""
+
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+      background-color: inherit;
+      color: #fff;
+  }
+  #login-dp .bottom{
+      background-color: inherit;
+      border-top:0 none;
+  }
+}
+#qrcode {
+width:160px;
+height:160px;
+margin-top:15px;
+}
+  </style>
+  <script src="qrcodejs/qrcode.min.js"></script>
+  <script src="qrcodejs/jquery.min.js"></script>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>Q-It</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="landing.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+		<li><a href="#service">Service</a></li>
+		<li><a href="#contact">Contact</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+  <ul id="login-dp" class="dropdown-menu">
+    <li>
+       <div class="row" >
+          <div class="col-xs-12">
+            Login via
+
+
+             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                <div class="form-group">
+                   <label class="sr-only" for="exampleInputEmail2">User Id</label>
+                   <input type="email" class="form-control" id="exampleInputEmail2" placeholder="User Id" required>
+                </div>
+                <div class="form-group">
+                   <label class="sr-only" for="exampleInputPassword2">Password</label>
+                   <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                         <div class="help-block text-right"><a href="">Forgot the password ?</a></div>
+                </div>
+                <div class="form-group">
+                   <button type="submit" class="btn btn-info btn-block">Sign in</button>
+                </div>
+                <div class="checkbox">
+                   <label>
+                   <input type="checkbox"> keep me logged-in
+                   </label>
+                </div>
+             </form>
+          </div>
+          <div class="bottom text-center">
+            New here ? <a href="#"><b>Join Us</b></a>
+          </div>
+       </div>
+    </li>
+  </ul>
+    </li>
+      </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+
+		<div class="slogan">
+			<h2> <span class="text_color">Quit queue! Join Q-It! </h2>
+			<h4>Just fill the attached form and we will get in touch soon!</h4>
+		</div>
+		<div class="page-scroll">
+			<a href="#contact" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+    </section>
+
+	<!-- Section: contact -->
+    <section id="contact" class="home-section text-center">
+		<div class="heading-contact">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow bounceInDown" data-wow-delay="0.4s">
+					<div class="section-heading">
+					<h2>QR Code Generator</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-50">
+			</div>
+		</div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="boxed-grey">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form id="contact-form" action="" method="post" role="form" class="contactForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="Aname">
+                                Ad Name:</label>
+                            <input type="text" name="Aname" class="form-control" id="Aname" placeholder="Enter advertisement name." data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+
+                        <div class="form-group">
+
+
+                            <div class="form-group">
+                              <label for="adImg">Upload image: </label>
+                              <input type="text" name="adImg" class="form-control" id="adImg" placeholder="Enter image url" data-rule="minlen:4" data-msg="Please enter at least 4 chars"  onfocusout="checkImage()" onfocusin="changeBackground()"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="adInfo">
+                              Info</label>
+
+                          <input type="text" name="adInfo" class="form-control" id="adInfo" placeholder="Enter details of the ad" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                          <label for="typeAd">
+                              Type of Ad</label>
+                          <input type="text" name="typeAd" class="form-control" id="typeAd" placeholder="Enter type of ad" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validation"></div>
+                      </div>
+
+                    </div>
+                    <!-- div for QR generator -->
+                    <div class="col-md-12">
+                        <h4>Mark place on the map</h4>
+    <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />                        <br> <br>
+    <div id="qrcode"></div>
+
+                    </div>
+                    <script type="text/javascript">
+                    var qrcode = new QRCode("qrcode");
+
+                    function makeCode () {
+                        var elText = document.getElementById("text");
+                        if (!elText.value) {
+                            alert("Input a text");
+                            elText.focus();
+                            return;
+                        }
+                        qrcode.makeCode(elText.value);
+                    }
+                    makeCode();
+                    $("#text").
+                        on("blur", function () {
+                            makeCode();
+                        }).
+                        on("keydown", function (e) {
+                            if (e.keyCode == 13) {
+                                makeCode();
+                            }
+                        });
+                    </script>
+                    <!-- end of div of QR generator -->
+                </div>
+                </form>
+            </div>
+        </div>
+
+		<div class="col-lg-4">
+			<div class="widget-contact">
+				<h5>Main Office</h5>
+
+        <address>
+				  <strong>Phagwara</strong><br>
+				  Punjab, India<br>
+				  <abbr title="Phone">P:</abbr> (+91) 9056182515
+				</address>
+
+				<address>
+				  <strong>Email</strong><br>
+				  <a href="mailto:#">bisso.banerjee@qit.tech</a>
+				</address>
+				<address>
+				  <strong>We're on social networks</strong><br>
+                       	<ul class="company-social">
+                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+				</address>
+
+			</div>
+		</div>
+    </div>
+
+  </div>
+	</section>
+	<!-- /Section: contact -->
+  <h1 style="color: #83e861; padding-left: 40px; font-family: 'Shadows Into Light', cursive;" class="animated bounce"><b>Success! Thanks for joining QIt</b></h1>
+  <h1 style="color: #ce2737; padding-left: 40px; font-family: 'Shadows Into Light', cursive;" class="animated bounce">Oops! Some error occurred.</h1>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="wow shake" data-wow-delay="0.4s">
+					<div class="page-scroll marginbot-30">
+						<a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+					</div>
+					</div>
+					<p>&copy;Q-It. All rights reserved.</p>
+                    <div class="credits">
+
+                        <a href="#">With our technology, disrupt all queues and make life user!</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <script type="text/javascript">
+  function changeBackground() {
+    document.getElementById('adImg').style.backgroundColor = '#ffffff';
+
+
+  }
+  function checkImage()
+  {
+    var flag =0;
+    var url = document.getElementById('adImg').value;
+    var url2 = document.getElementById('adImg').value;;
+    // var x = url.length();
+    var start =  url2.split(":");
+    console.log("value of start[0]: " + start[0]);
+    if((start[0]=="http")||(start[0]=="https"))
+    {
+      flag=0;
+    }
+    else {
+      flag = 1;
+    }
+    var extension = url.split(".").reverse();
+    console.log("array at 0 index: " + extension[0]);
+
+    if(!((extension[0] == 'png') || ((extension[0] == 'jpg')) || ((extension[0] == 'jpeg'))))
+    {
+      flag =1;
+    }
+    if(flag == 1)
+    {
+      document.getElementById('adImg').style.backgroundColor = '#efd4cb';
+
+      alert("Please verify the image url");
+
+
+    }
+
+
+    console.log(extension);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3JN4_CZKLGEP-XFtXzKhD-xqcc2xWu4k&callback=initMap" async defer></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+    <script src="contactform/contactform.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/geocomplete/1.7.0/jquery.geocomplete.min.js"></script>
+</body>
+
+</html>
