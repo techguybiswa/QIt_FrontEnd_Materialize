@@ -15,7 +15,7 @@ margin-top:15px;
 
   </head>
   <body>
-    <input id="text" type="text" value="" style="width:100%" /><br />
+    <input id="text" type="text" value="" style="width:100%" style="color: white"><b/>
 <div id="qrcode"></div>
 <script type="text/javascript">
 var qrcode = new QRCode("qrcode");
@@ -24,7 +24,7 @@ function makeCode () {
     var elText = document.getElementById("text");
     if (!elText.value) {
         alert("Input a text");
-        <!-- elText.focus(); -->
+        elText.focus();
         return;
     }
     qrcode.makeCode(elText.value);

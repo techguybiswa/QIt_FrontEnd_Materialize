@@ -19,7 +19,15 @@
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
   <style media="screen">
-  <script src=""
+  <style>
+  #qrcode {
+  width:160px;
+  height:160px;
+  margin-top:15px;
+}
+  </style>
+  <script  src="qrcodejs/qrcode.min.js "></script>
+  <script src="qrcodejs/jquery.min.min.js "></script>
 
 #login-dp{
   min-width: 250px;
@@ -71,14 +79,11 @@
       border-top:0 none;
   }
 }
-#qrcode {
-width:160px;
-height:160px;
-margin-top:15px;
-}
+#map {
+       height: 400px;
+       width: 710px;
+     }
   </style>
-  <script src="qrcodejs/qrcode.min.js"></script>
-  <script src="qrcodejs/jquery.min.js"></script>
 
 
 </head>
@@ -172,7 +177,7 @@ margin-top:15px;
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
-					<h2>QR Code Generator</h2>
+					<h2>Ads Manager</h2>
 					<i class="fa fa-2x fa-angle-down"></i>
 
 					</div>
@@ -229,37 +234,89 @@ margin-top:15px;
                       </div>
 
                     </div>
-                    <!-- div for QR generator -->
                     <div class="col-md-12">
                         <h4>Mark place on the map</h4>
-    <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />                        <br> <br>
-    <div id="qrcode"></div>
-
+                        <input id="text" type="text" value="https://hogangnono.com" style="width:80%" /><br />
+                        <div id="qrcode"></div>
+                        <br> <br>
                     </div>
                     <script type="text/javascript">
                     var qrcode = new QRCode("qrcode");
 
-                    function makeCode () {
-                        var elText = document.getElementById("text");
-                        if (!elText.value) {
-                            alert("Input a text");
-                            elText.focus();
-                            return;
-                        }
-                        qrcode.makeCode(elText.value);
-                    }
-                    makeCode();
-                    $("#text").
-                        on("blur", function () {
-                            makeCode();
-                        }).
-                        on("keydown", function (e) {
-                            if (e.keyCode == 13) {
-                                makeCode();
-                            }
-                        });
+function makeCode () {
+var elText = document.getElementById("text");
+
+if (!elText.value) {
+  alert("Input a text");
+  elText.focus();
+  return;
+}
+
+qrcode.makeCode(elText.value);
+}
+
+makeCode();
+
+$("#text").
+on("blur", function () {
+  makeCode();
+}).
+on("keydown", function (e) {
+  if (e.keyCode == 13) {
+    makeCode();
+  }
+});
                     </script>
-                    <!-- end of div of QR generator -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="adInfo">
+                              Latitude</label>
+                          <input type="text" name="latAd" class="form-control" id="latAd" placeholder="Latitude" />
+                          <div class="validation"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="adInfo">
+                              Longitude</label>
+                          <input type="text" name="longAd" class="form-control" id="longAd" placeholder="Longitude" />
+                          <div class="validation"></div>
+                      </div>
+                    </div>
+                    <script>
+                    var map;
+                    function initMap() {
+                      map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 17.445693, lng: 78.3465994},
+                        zoom: 8
+                      });
+                      var marker;
+
+    google.maps.event.addListener(map, 'click', function(event) {
+
+       placeMarker(event.latLng);
+       var coordinates = event.latLng;
+       document.getElementById('latAd').value = coordinates.lat();
+       document.getElementById('longAd').value = coordinates.lng();
+
+
+    });
+
+    function placeMarker(location) {
+
+                    if (marker == null)
+                    {
+                      marker = new google.maps.Marker({
+                          position: location,
+                          map: map
+                        }); } else {   marker.setPosition(location); } }
+                    }
+
+                    </script>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-skin pull-right" id="btnSubmit" name="btnSubmit">
+                            Submit! </button>
+                    </div>
                 </div>
                 </form>
             </div>
