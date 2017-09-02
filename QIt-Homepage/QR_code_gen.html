@@ -118,7 +118,6 @@
             Login via
 
 
-             <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
                 <div class="form-group">
                    <label class="sr-only" for="exampleInputEmail2">User Id</label>
                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="User Id" required>
@@ -136,7 +135,7 @@
                    <input type="checkbox"> keep me logged-in
                    </label>
                 </div>
-             </form>
+
           </div>
           <div class="bottom text-center">
             New here ? <a href="#"><b>Join Us</b></a>
@@ -204,7 +203,7 @@
                         <br>
                         <input type="text" name="text" id="text" class="form-control" value="You queue number is: 009" style="width:80%; background-color: white; color: black;"/>
                         <br>
-                        <div id="qrcode" ></div>
+                        <div id="qrcode" style="width: 50%; margin: 0 auto;" ></div>
                         <br> <br>
                     </div>
                     <script type="text/javascript">
@@ -247,36 +246,7 @@ on("keydown", function (e) {
 });
                     </script>
 
-                    <script>
-                    var map;
-                    function initMap() {
-                      map = new google.maps.Map(document.getElementById('map'), {
-                        center: {lat: 17.445693, lng: 78.3465994},
-                        zoom: 8
-                      });
-                      var marker;
 
-    google.maps.event.addListener(map, 'click', function(event) {
-
-       placeMarker(event.latLng);
-       var coordinates = event.latLng;
-       document.getElementById('latAd').value = coordinates.lat();
-       document.getElementById('longAd').value = coordinates.lng();
-
-
-    });
-
-    function placeMarker(location) {
-
-                    if (marker == null)
-                    {
-                      marker = new google.maps.Marker({
-                          position: location,
-                          map: map
-                        }); } else {   marker.setPosition(location); } }
-                    }
-
-                    </script>
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-skin pull-right" id="btnSubmit" name="btnSubmit">
                             DONE! </button>
@@ -340,47 +310,6 @@ on("keydown", function (e) {
 			</div>
 		</div>
 	</footer>
-  <script type="text/javascript">
-  function changeBackground() {
-    document.getElementById('adImg').style.backgroundColor = '#ffffff';
-
-
-  }
-  function checkImage()
-  {
-    var flag =0;
-    var url = document.getElementById('adImg').value;
-    var url2 = document.getElementById('adImg').value;;
-    // var x = url.length();
-    var start =  url2.split(":");
-    console.log("value of start[0]: " + start[0]);
-    if((start[0]=="http")||(start[0]=="https"))
-    {
-      flag=0;
-    }
-    else {
-      flag = 1;
-    }
-    var extension = url.split(".").reverse();
-    console.log("array at 0 index: " + extension[0]);
-
-    if(!((extension[0] == 'png') || ((extension[0] == 'jpg')) || ((extension[0] == 'jpeg'))))
-    {
-      flag =1;
-    }
-    if(flag == 1)
-    {
-      document.getElementById('adImg').style.backgroundColor = '#efd4cb';
-
-      alert("Please verify the image url");
-
-
-    }
-
-
-    console.log(extension);
-  }
-  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3JN4_CZKLGEP-XFtXzKhD-xqcc2xWu4k&callback=initMap" async defer></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

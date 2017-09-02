@@ -5,13 +5,24 @@
     <title>QR Print</title>
     <link rel="stylesheet" href="QRPrint.css">
     <link href="https://fonts.googleapis.com/css?family=Sura" rel="stylesheet">
-
+    <script  src="../qrcodejs/qrcode.min.js "></script>
+    <script src="../qrcodejs/jquery.min.js "></script>
   </head>
   <body>
 
     <div class="container-gradient">
       <h1><b>QIt - Scan the QR to Queue yourself.</b></h1>
     </div>
+    <br>
+    <br>
+    <div class="container-gradient-second">
+
+      <input type="text" name="text" id="text" class="form-control" value="You queue number is: 009" />
+      <br>
+      <div id="qrcode" style="width: 30%; margin: 0 auto; border:" ></div>
+      <br> <br>
+    </div>
+    <script src="QR_Print.js"></script>
 
   </body>
 </html>
