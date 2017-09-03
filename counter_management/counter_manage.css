@@ -132,3 +132,22 @@ material-icons:hover {
 .navbar-heading {
   font-size: 46px;
 }
+
+
+/*add this CSS*/
+
+span {
+  float: right;
+  font-size: 16px;
+  color: '#b6ccef';
+  height: 24px;
+  width: 34px;
+  position: relative;
+  padding-left: 100px;
+}
+
+
+#closeIt:hover {
+  background-color: 'b6ccef';
+  cursor: pointer;
+}
