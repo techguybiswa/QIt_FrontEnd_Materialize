@@ -136,7 +136,7 @@ material-icons:hover {
 
 /*add this CSS*/
 
-span {
+#closeIt {
   float: right;
   font-size: 16px;
   color: '#b6ccef';
@@ -150,4 +150,18 @@ span {
 #closeIt:hover {
   background-color: 'b6ccef';
   cursor: pointer;
+}
+
+
+
+
+li {
+  padding-right: 300px;
+  font-color: white;
+}
+.caret {
+  color: white;
+}
+.whiteContainer {
+  color: white;
 }

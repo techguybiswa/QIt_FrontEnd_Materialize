@@ -2,30 +2,32 @@
   <head>
     <meta charset="utf-8">
     <title>Counter Manage</title>
+
+
     <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="counter_manage.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
   <!-- Compiled and minified JavaScript -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script></script>
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <link rel="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="fusion.js"></script>
-  <script type="text/javascript" src="theme.js"></script>
-  <script type="text/javascript" src="counter_manage.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
   <link rel="stylesheet" href="  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- sweet alert -->
+  <script src="https://limonte.github.io/sweetalert2/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://limonte.github.io/sweetalert2/dist/sweetalert2.min.css">
 </head>
-<body style="overflow-x: hidden">
+<body >
     <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
@@ -54,6 +56,9 @@
               05
           </div>
           </div>
+          <script type="text/javascript">
+          console.log("LOADING SEX");
+          </script>
         </div>
       </div>
     </div>
@@ -78,20 +83,31 @@
 <div class="col s4">
   <div class="row" id="counterDetails" style="display: none; position: absolute;">
         <div class="col s12">
-          <div class="card-panel moveUp" style="height: 440px;  z-index: 99 !important;" >
+          <div class="card-panel moveUp" style="height: 500px;  z-index: 99 !important;" >
             <div class="row">
               <div class="col s12 middle">
-                Add counter details <span style="float: right; font-size: 12px; color: white;" id="closeIt"><b>X</b></span>
+                Add counter details <span  id="closeIt"><b>X</b></span>
               </div>
-              <script type="text/javascript">
-
-              </script>
               <!-- <form class="" action="" method="post"> -->
                 <input type="text" id="username" placeholder="Enter Username" style="color: white;">
+
                 <input type="text" id="fname" placeholder="Enter first name" style="color: white;">
                 <input type="text" id="lname" placeholder="Enter last name" style="color: white;">
                 <input type="password" id="pass" placeholder="Enter password" style="color: white;">
                 <input type="number" id="gId" placeholder="Enter group ID" style="color: white;">
+                <div class="whiteContainer" >
+                  <select style="color: white">
+                    <option value="saab" style="font-size: 10px;">Counter</option>
+                    <hr>
+                    <option value="volvo"><p style="color: white">Volvo</p></option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    <option value="audi">Audi</option>
+                    <option value="saab">Saab</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
                 <button type="button" class="waves-effect waves-light btn" style="margin-left: 65px;" id="saveCounterDetails">Done</button>
               <!-- </form> -->
 
@@ -182,10 +198,31 @@
 
   </div>
     <br><br><br><br><br><br>
+
+
+<!-- testing material -->
+
   </div>
 </div>
 </div>
+
+<div class="container" id="selectoption">
+</div>
 <script src="counter_manage.js"></script>
+<script type="text/javascript">
+  swal(
+    'Welcome!',
+    'This is QIt counter manage.',
+    'success'
+  )
+</script>
 
   </body>
+
+</div>
+
+
+
+
+
 </html>
