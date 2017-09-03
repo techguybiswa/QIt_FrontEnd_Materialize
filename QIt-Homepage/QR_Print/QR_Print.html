@@ -7,6 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Sura" rel="stylesheet">
     <script  src="../qrcodejs/qrcode.min.js "></script>
     <script src="../qrcodejs/jquery.min.js "></script>
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
   </head>
   <body>
     <div class="container-gradient">
@@ -17,7 +23,30 @@
     <div class="container-gradient-second">
       <input type="text" name="text" id="text" class="form-control" value="Abhinav chutiya hain" />
       <br>
-      <div id="qrcode" style="width: 30%; margin: 0 auto; border:" ></div>
+      <div class="row">
+        <div class="col s3">
+          &nbsp;
+        </div>
+        <div class="col s12 m6">
+          <div class="card" style="padding-top: 40px;">
+            <div class="card-image" >
+              <div id="qrcode" style="width: 30%; margin: 0 auto; border;" ></div>
+            </div>
+            <div class="card-content">
+              <br>
+              <p style="text-align: center"><i>Queue Management System:</i> <b>QIt</b> is developed by StuxNet, a fast growing tech startup.
+              Scan the QR code to queue yourself on the virtual queue. <br> With QIt say no to Queue.</p>
+            </div>
+            <div class="card-action">
+              <a href="#" style="margin-left: 45%;" onclick="window.print();">Page Print</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s3">
+          &nbsp;
+        </div>
+      </div>
+
       <br><br>
     </div>
     <script src="QR_Print.js"></script>
