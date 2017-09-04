@@ -165,3 +165,20 @@ li {
 .whiteContainer {
   color: white;
 }
+
+.topRight{
+  position:absolute;
+  top:100;
+  right:0;
+ }
+.box {
+  height: 70px;
+  width: 350px;
+  position:fixed;
+  top:60;
+  right:131;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  border: 1 px solid blue;
+  display: none;
+}

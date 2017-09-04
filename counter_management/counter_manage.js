@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ $(document).ready(function(){
   $("select ul").attr("class", "");
 
   $('#title_qit').addClass('animated fadeInDown');
@@ -22,6 +22,26 @@ $('#closeIt').click(function(){
 
 $('#saveCounterDetails').click(function(){
    $('#counterDetails').css("display", "none");
+});
+
+$('#increaseCounter').click(function(){
+  console.log("Hello world");
+});
+var myFlag=0;
+$('#increaseCounter').click(function(){
+  if(myFlag==0)
+  {
+    $('#topRight').css("display", "block");
+    myFlag =1;
+  }
+  else {
+    $('#topRight').css("display", "none");
+    myFlag =0;
+  }
+
+    // $('#topRight').addClass('animated fadeInUp');
+
+
 });
 
 function hideMe(Cid) {
