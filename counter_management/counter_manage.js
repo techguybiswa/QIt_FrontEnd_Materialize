@@ -15,6 +15,11 @@
 $('#addCounter').click(function(){
     $('#counterDetails').css("display", "block");
 });
+function hide()
+ {
+   document.getElementById('topRight').style.display = 'none';
+   console.log("FUCK");
+ }
 //add this JS
 $('#closeIt').click(function(){
     $('#counterDetails').css("display", "none");
@@ -28,7 +33,6 @@ $('#saveCounterDetails').click(function(){
 var myFlag=0;
 $('#doneCounter').click(function(){
   $('#topRight').css("display", "none");
-  console.log("SHRIOM FUCKS");
   myFlag =0;
 });
 $('#increaseCounter').click(function(){

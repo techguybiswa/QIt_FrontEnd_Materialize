@@ -137,10 +137,7 @@ material-icons:hover {
 .navbar-heading {
   font-size: 46px;
 }
-
-
 /*add this CSS*/
-
 #closeIt {
   float: right;
   font-size: 16px;
@@ -150,16 +147,10 @@ material-icons:hover {
   position: relative;
   padding-left: 100px;
 }
-
-
 #closeIt:hover {
   background-color: 'b6ccef';
   cursor: pointer;
 }
-
-
-
-
 li {
   padding-right: 300px;
   font-color: white;
@@ -176,7 +167,6 @@ li {
   top:100;
   right:0;
   background-color: red;
-
  }
 .box {
   height: 120px;
@@ -187,10 +177,7 @@ li {
   opacity: 0.8;
   filter: alpha(opacity=50);
   display: none;
-
 }
-
-
 .blue {
   font-size: 16px;
 }
