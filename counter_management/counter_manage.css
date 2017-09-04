@@ -39,6 +39,11 @@ h4{
   padding-bottom: 30px;
   border-radius: 5px 5px 5px 5px;
 }
+.card-panel-top {
+  background-color: #575c82;
+  margin-top: 5px;
+  height: 184px;
+}
 .moveUp{
   position: relative;
   top: 0;
@@ -170,15 +175,22 @@ li {
   position:absolute;
   top:100;
   right:0;
+  background-color: red;
+
  }
 .box {
-  height: 70px;
+  height: 120px;
   width: 350px;
   position:fixed;
   top:60;
   right:131;
-  opacity: 0.5;
+  opacity: 0.8;
   filter: alpha(opacity=50);
-  border: 1 px solid blue;
   display: none;
+
+}
+
+
+.blue {
+  font-size: 16px;
 }

@@ -24,6 +24,9 @@ $('#saveCounterDetails').click(function(){
    $('#counterDetails').css("display", "none");
 });
 
+
+
+
 $('#increaseCounter').click(function(){
   console.log("Hello world");
 });
