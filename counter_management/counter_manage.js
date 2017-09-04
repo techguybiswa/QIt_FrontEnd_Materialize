@@ -25,12 +25,12 @@ $('#saveCounterDetails').click(function(){
 });
 
 
-
-
-$('#increaseCounter').click(function(){
-  console.log("Hello world");
-});
 var myFlag=0;
+$('#doneCounter').click(function(){
+  $('#topRight').css("display", "none");
+  console.log("SHRIOM FUCKS");
+  myFlag =0;
+});
 $('#increaseCounter').click(function(){
   if(myFlag==0)
   {
