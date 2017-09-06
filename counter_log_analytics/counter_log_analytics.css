@@ -28,7 +28,9 @@ h4{
 }
 .card-panel {
   background-color: #002642;
-  margin-top: 5px;
+  margin-t
+
+: 5px;
   height: 122px;
 }
 .card-panel2 {
@@ -285,3 +287,6 @@ opacity: 0.4;
    transition: all 0.5s;
    -webkit-transition: all 0.5s;
 }
+
+
+

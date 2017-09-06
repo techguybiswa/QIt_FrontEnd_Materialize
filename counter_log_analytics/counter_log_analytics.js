@@ -3,6 +3,7 @@ $(document).ready(function(){
   $('#animate_row').addClass('animated fadeInUp');
   $('#title2').addClass('animated slideInLeft');
   $('#chatButton').addClass('animated rotateInDownRight');
+    $('select').material_select();
 
 
 

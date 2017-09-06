@@ -10,8 +10,9 @@
   <!-- Compiled and minified JavaScript -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -41,7 +42,7 @@
     <h4 id="title_qit" >Counter Log and analytics</h4>
   </div>
 <div class="container-fluid">
-  <div class="row" id="animate_row" style="padding-bottom:-10px;">
+  <div class="row" id="animate_row" style="">
     <div class="col s4">
       <div class="row">
       <div class="col s12">
@@ -96,14 +97,23 @@
     <br><br><br><br><br><br>
     <div class="titlePush" style="border: 1px solid #002642; background-color: white">
       <div class="row">
-        <div class="col s4">
-          &nbsp;
-        </div>
-        <div class="col s3" style="padding-left: 100px;">
-          <h7 class="middle-colored" style="margin-bottom: 130px;"><b>Customer Logs</b></h7>
+        <div class="col s4" style="padding-left: 150px; ">
+<select>
+      <option value="" disabled selected>Choose your counter</option>
+      <option value="1">Counter 1</option>
+      <option value="2">Counter 2</option
+      <option value="3">Counter 3</option>
+    </select>
 
         </div>
-        <div class="col s2">
+        <div class="col s3" style="padding-left: 30px;">
+          <h7 class="middle-colored" style="margin-bottom: 130px;"><b>Customer Logs</b></h7>
+	  <div class="input-field col s12">
+
+  </div>
+
+        </div>
+        <div class="col s2" >
 		<a class="waves-effect waves-light btn">Get CSV</a>
 
       	</div>
@@ -241,5 +251,6 @@
 </div>
 </div>
 <script src="counter_log_analytics.js"></script>
+
   </body>
 </html>
